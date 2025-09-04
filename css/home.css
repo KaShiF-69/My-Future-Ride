@@ -27,27 +27,29 @@ html {
 
 /* Prevent AOS from moving elements outside viewport */
 [data-aos="fade-left"] {
-  transform: translateX(0) !important; /* no shift */
-  opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
+    transform: translateX(0) !important;
+    /* no shift */
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
 }
 
 [data-aos="fade-right"] {
-  transform: translateX(0) !important;
-  opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
+    transform: translateX(0) !important;
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
 }
 
 [data-aos="fade-up"] {
-  transform: translateY(40px); /* only vertical shift */
+    transform: translateY(40px);
+    /* only vertical shift */
 }
 
 [data-aos="fade-down"] {
-  transform: translateY(-40px);
+    transform: translateY(-40px);
 }
 
 
@@ -80,12 +82,24 @@ html {
     animation: bounce 1s infinite alternate;
 }
 
-.loader span:nth-child(2) { animation-delay: 0.2s; }
-.loader span:nth-child(3) { animation-delay: 0.4s; }
+.loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.4s;
+}
 
 @keyframes bounce {
-    from { transform: translateY(0); opacity: 0.6; }
-    to { transform: translateY(-15px); opacity: 1; }
+    from {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+
+    to {
+        transform: translateY(-15px);
+        opacity: 1;
+    }
 }
 
 .loading-text {
@@ -98,8 +112,15 @@ html {
 }
 
 @keyframes fade {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 1; }
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
 
 #preloader.hide {
@@ -410,6 +431,7 @@ html {
 }
 
 @media (max-width: 650px) {
+
     .btn-1,
     .btn-2 {
         padding: 7px 15px;
@@ -433,6 +455,7 @@ html {
 }
 
 @media (max-width: 520px) {
+
     .btn-1,
     .btn-2 {
         padding: 5px 10px;
@@ -458,6 +481,7 @@ html {
 }
 
 @media (max-width: 450px) {
+
     .btn-1,
     .btn-2 {
         display: none;
@@ -520,7 +544,7 @@ html {
 
 .find-ride input {
     width: 180px;
-    padding: 15px; 
+    padding: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     outline: none;
@@ -956,6 +980,21 @@ html {
 .service-card3 {
     border-bottom: none;
 }
+
+.modal-btn {
+    background-color: #f8bf27;
+    color: black;
+    width: 80px;
+    height: 35px;
+    border-radius: 8px;
+}
+
+.modal-btn:hover {
+    background-color: black;
+    color: white;
+    transition: ease-in-out 0.5s;
+}
+
 
 @media (max-width: 1318px) {
     .service-banner {
