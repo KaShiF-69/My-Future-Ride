@@ -410,6 +410,7 @@ header {
     background-color: #fff;
     border-radius: .25rem;
     padding: .5rem 0;
+    height: 220px;
 }
 
 .dropdown-item {
@@ -513,6 +514,19 @@ header {
 
     .navbar {
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .dropdown-menu {
+        background-color: #fff;
+        border-radius: .25rem;
+        padding: .5rem 0;
+        max-height: 150px;
+        overflow-y: auto;
+        padding-left: 10px;
+    }
+
+    .dropdown-menu li{
+        padding-left: 10px;
     }
 
 }

@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".client");
   const contentSections = document.querySelectorAll(".sign-up");
@@ -41,4 +42,24 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("preloader").classList.add("hide");
     }); // 1 second
   });
+
+  // button
+const pickupInput = document.querySelector('input[placeholder="Email *"]');
+const dropoffInput = document.querySelector('input[placeholder="Password *"]');
+const bookNowButtonRide = document.querySelector('.btn-submit');
+const bookNowButtonDrive = document.querySelector('.ride-btn');
+
+bookNowButtonRide.addEventListener('click', function (event) {
+  event.preventDefault(); // Stop the form from submitting
+
+  // Check if any of the required fields are empty
+  if (pickupInput.value === '' || dropoffInput.value === '') {
+    alert('Please fill out all the fields before signing in to your account.');
+  } else {
+    // All fields are filled, show the success message
+    alert('You have successfully signed in!');
+  }
+});
+
+
 

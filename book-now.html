@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Now</title>
+    <link rel="icon" href="assets/home img/icon/FutureRideLogo.ico">
+    <link rel="stylesheet" href="css/book-now.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css" />
+    <!-- Font Awsome CDN  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS Library CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="Bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="Jquery/Jquery.js"></script>
+</head>
+
+<body>
+
+
+
+    <!-- Navigation Bar Coding -->
+    <div class="navbar text-center">
+        <a href="#"><img class="logo" src="assets/home img/jpg/FutureRideLogo.png" alt="Logo"></a>
+        <div class="ham-menu" id="hamburger-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="nav-links" id="main-nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a class="dropdown-item" href="future-ride.html">Future Ride</a></li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Pages
+                </a>
+                <ul class="dropdown-menu page-dropdown" aria-labelledby="pagesDropdown">
+                    <li><a class="dropdown-item" href="all-services.html">All Services</a></li>
+                    <li><a class="dropdown-item" href="car-listing.html">Car Listing</a></li>
+                    <li><a class="dropdown-item" href="Riders.html">All Riders</a></li>
+                    <li><a class="dropdown-item" href="create_account.html">Create Account</a></li>
+                    <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                    <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="Contact-Us.html">Contact Us</a></li>
+        </ul>
+        <div class="nav-btn">
+            <button class="btn-1"><a href="book-now.html">Book Now</a></button>
+            <button class="btn-2"><a href="create_account.html">Get Started</a></button>
+        </div>
+    </div>
+
+
+    <main>
+        <div class="bg-img" data-aos="fade-up" data-aos-duration="1000">
+            <div class="text">
+                <h1 data-aos="fade-right" data-aos-duration="1200">BOOK NOW</h1>
+                <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200">
+                    <a href="home.html">Home</a> <span>//</span> <a href="book-now.html">Book Now</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+
+
+    <section class="booking-section">
+    <div class="booking-container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="booking-header">
+            <h1 data-aos="fade-right" data-aos-duration="1200">Book Your Local Ride & Future Ride!</h1>
+            <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200">Booking your ride is a super easy process. Get ready to hit the road with just a few clicks!, and enjoy the journey.
+                you can book your ride in advance or on-demand, choose your preferred vehicle type, and customize your trip details.
+                Whether you need a quick ride across town or a comfortable journey to your destination, we've got you covered.
+            </p>
+        </div>
+
+        <form class="booking-form">
+            <div class="form-group" data-aos="fade-up" data-aos-delay="200">
+                <input type="text" placeholder="Your Name">
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="form-group" data-aos="fade-up" data-aos-delay="300">
+                <input type="tel" placeholder="Phone Number">
+                <i class="fa fa-phone"></i>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="400">
+                <input type="text" placeholder="Pick Up point">
+                <i class="fa fa-location-dot"></i>
+            </div>
+            <div class="form-group" data-aos="fade-up" data-aos-delay="500">
+                <input type="text" placeholder="Drop Off point">
+                <i class="fa fa-location-dot"></i>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="600">
+                <select>
+                    <option disabled selected>Passenger</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="form-group" data-aos="fade-up" data-aos-delay="700">
+                <select>
+                    <option disabled selected>Select Car</option>
+                    <option>Toyota</option>
+                    <option>Alto</option>
+                    <option>Mehran</option>
+                    <option>Civic</option>
+                    <option>Corolla</option>
+                    <option>Bike</option>
+                </select>
+            </div>
+
+            <div class="form-group" data-aos="fade-up" data-aos-delay="800">
+                <input type="date" placeholder="Select Date">
+                <i class="fa fa-calendar"></i>
+            </div>
+            <div class="form-group" data-aos="fade-up" data-aos-delay="900">
+                <input type="time" placeholder="Select Time">
+                <i class="fa fa-clock"></i>
+            </div>
+            <div class="form-group full" data-aos="fade-up" data-aos-delay="1000">
+                <textarea placeholder="Your Message..."></textarea>
+                <i class="fa fa-pen"></i>
+            </div>
+
+            <div class="form-group full" data-aos="fade-up" data-aos-delay="1100">
+                <button type="submit" class="btn-submit">Book Now</button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+  <div class="container-fuild footer-container px-5 text-light" data-aos="fade-up" data-aos-duration="1000"
+    data-aos-offset="50">
+    <div class="row mt-5">
+      <!-- col 1 -->
+      <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" data-aos="fade-right" data-aos-delay="200"
+        data-aos-duration="1000" data-aos-offset="50">
+        <div class="d-flex align-items-center">
+          <img class="w-25 p-0 m-0" src="assets/home img/jpg/FutureRideLogo.png" alt="">
+          <p class="footerfont fs-5 text-center">MY FUTURE RIDE</p>
+        </div>
+        <p class="mt-5 mx-4">
+          My Future Ride is your trusted partner for safe, fast, and affordable travel. Since 2015, we have
+          been making every ride comfortable and reliable.
+        </p>
+        <h4 class="mt-5 mx-4 ">
+          Toll free <span class="text-warning fs-6">Helpline</span>
+        </h4>
+        <p class="mx-4 mt-3">
+          <a class="text-decoration-none text-warning"
+            href="https://api.whatsapp.com/send?phone=923355020028&text=I%20need%20to%20book%20a%20ride%20from%20%5Blocation%5D%20to%20%5Bdestination%5D.%20%F0%9F%9A%95">(+92)
+            335 5020028</a>
+        </p>
+      </div>
+      <!-- col 2 -->
+      <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="400"
+        data-aos-duration="1000" data-aos-offset="50">
+        <h3 class="footerfont fs-4">Our Services:</h3>
+        <div class="mt-5"></div>
+        <ul class="Services-list list-unstyled">
+          <li><a href="#">Future Ride</a></li>
+          <li><a href="#">Ride Sharing</a></li>
+          <li><a href="#">Intercity Service</a></li>
+          <li><a href="#">Package delivery</a></li>
+        </ul>
+      </div>
+      <!-- col 3 -->
+      <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" data-aos="fade-up" data-aos-delay="600"
+        data-aos-duration="1000" data-aos-offset="50">
+        <h3 class="footerfont fs-4">Contact Us</h3>
+        <ul class="services-contact list-unstyled mt-5">
+          <li>
+            <a href="https://maps.app.goo.gl/j9bayqEmrKUXaR1UA">Address: Sector 37 D Landhi Town, Karachi,
+              Pakistan</a>
+          </li>
+          <li>
+            <a class="text-decoration-none text-warning"
+              href="https://api.whatsapp.com/send?phone=923355020028&text=I%20need%20to%20book%20a%20ride%20from%20%5Blocation%5D%20to%20%5Bdestination%5D.%20%F0%9F%9A%95">(+92)
+              335 5020028</a>
+          </li>
+          <li><a href="#">Email: aptechlandhi@gmail.com</a></li>
+        </ul>
+      </div>
+      <!-- col 4 -->
+      <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12" data-aos="fade-left" data-aos-delay="800"
+        data-aos-duration="1000" data-aos-offset="50">
+        <h3 class="footerfont fs-4">Newsletter:</h3>
+        <input class="email form-control text-light mt-5" type="email" placeholder="Enter Your Email" />
+        <button class="btn btn-warning my-3 mt-4" type="submit">Subscribe Now</button>
+        <div class="form-check mt-3">
+          <input class="form-check-input" type="checkbox" />
+          <label class="form-check-label text-white">I agree to email receive.</label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+    <script src="javascript/book-now.js"></script>
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS with settings to replay animations
+        AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+            // custom fix for scroll issue
+            offset: 0
+        });
+    </script>
+
+</body>
+
+</html>

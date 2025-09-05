@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Us</title>
+  <title>About Us | My Future Ride</title>
   <link rel="icon" href="assets/home img/icon/FutureRideLogo.ico">
   <link rel="stylesheet" href="css/about.css" />
   <link rel="stylesheet" href="Bootstrap/css/bootstrap.css" />
@@ -16,53 +16,49 @@
 
 <body>
   <!-- Preloader -->
-  <div id="preloader">
-    <div class="loader">
-      <span></span>
-      <span></span>
-      <span></span>
+    <div id="preloader">
+      <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <h2 class="loading-text">Loading...</h2>
     </div>
-    <h2 class="loading-text">Loading...</h2>
-  </div>
-
   <!-- Navigation Bar Coding -->
-  <div class="navbar text-center">
-    <a href="#"><img class="logo" src="assets/home img/jpg/FutureRideLogo.png" alt="Logo"></a>
-    <div class="ham-menu" id="hamburger-menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+        <div class="navbar text-center">
+            <a href="#"><img class="logo" src="assets/home img/jpg/FutureRideLogo.png" alt="Logo"></a>
+            <div class="ham-menu" id="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-    <ul class="nav-links" id="main-nav-links">
-      <li><a href="home.html">Home</a></li>
-      <li><a href="Future-Ride.html">Future Ride</a></li>
+            <ul class="nav-links" id="main-nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a class="dropdown-item" href="future-ride.html">Future Ride</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu page-dropdown" aria-labelledby="pagesDropdown">
+                        <li><a class="dropdown-item" href="all-services.html">All Services</a></li>
+                        <li><a class="dropdown-item" href="car-listing.html">Car Listing</a></li>
+                        <li><a class="dropdown-item" href="Riders.html">All Riders</a></li>
+                        <li><a class="dropdown-item" href="create_account.html">Create Account</a></li>
+                        <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
+                        <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+                    </ul>
+                </li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="Contact-Us.html">Contact Us</a></li>
+            </ul>
+            <div class="nav-btn">
+                <button class="btn-1"><a href="book-now.html">Book Now</a></button>
+                <button class="btn-2"><a href="create_account.html">Get Started</a></button>
+            </div>
+        </div>
 
-
-      <li><a class="dropdown-item" href="all-services.html">All Services</a></li>
-
-
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown"
-          aria-expanded="false">
-          Pages
-        </a>
-        <ul class="dropdown-menu page-dropdown" aria-labelledby="pagesDropdown">
-          <li><a class="dropdown-item" href="car-listing.html">Car Listing</a></li>
-          <li><a class="dropdown-item" href="Riders.html">All Riders</a></li>
-          <li><a class="dropdown-item" href="create_account.html">Create Account</a></li>
-          <li><a class="dropdown-item" href="signin.html">Sign In</a></li>
-          <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
-        </ul>
-      </li>
-      <li><a href="Contact-Us.html">Contact Us</a></li>
-      <li><a href="about.html">About Us</a></li>
-    </ul>
-    <div class="nav-btn">
-      <button class="btn-1"><a href="#">Book Now</a></button>
-      <button class="btn-2"><a href="#">Get Started</a></button>
-    </div>
-  </div>
 
   <!-- ABOUT US -->
   <div class="header" data-aos="fade-up" data-aos-duration="1000">
@@ -258,7 +254,7 @@
     </div>
   </div>
 
-    <!-- Footer -->
+  <!-- Footer -->
     <div class="container-fuild footer-container px-5 text-light" data-aos="fade-up" data-aos-duration="1000"
         data-aos-offset="50">
         <div class="row mt-5">
@@ -325,36 +321,20 @@
         </div>
     </div>
 
-  <!-- AOS JS -->
+  <script src="javascript/About.js"></script>
+  <!-- AOS Library JS -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    AOS.init();
-
-    // Counter Animation
-    const counters = document.querySelectorAll('.counter-number');
-    const speed = 200;
-
-    counters.forEach(counter => {
-      const animate = () => {
-        const value = +counter.getAttribute('data-target');
-        const data = +counter.innerText;
-
-        const time = value / speed;
-        if (data < value) {
-          counter.innerText = Math.ceil(data + time);
-          setTimeout(animate, 10);
-        } else {
-          counter.innerText = value;
-        }
-      };
-      animate();
-    });
-
-    // Preloader
-    window.addEventListener('load', () => {
-      const preloader = document.getElementById('preloader');
-      preloader.style.display = 'none';
-    });
+    // Initialize AOS with settings to replay animations
+    AOS.init({
+            duration: 600,
+            easing: 'ease-in-out',
+            once: false,
+            mirror: false,
+            anchorPlacement: 'top-bottom',
+            // custom fix for scroll issue
+            offset: 0
+        });
   </script>
 </body>
 
