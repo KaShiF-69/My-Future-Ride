@@ -243,8 +243,9 @@
                     <h1>Taxi sharing</h1>
                     <p>Share your taxi ride with others and save on costs.</p>
                 </div>
-                <button class="view-detail-1">View Details <svg xmlns="http://www.w3.org/1000/svg" width="14"
-                        height="14" fill="currentColor" viewBox="0 0 16 16">
+                <button class="view-detail-1" data-bs-toggle="modal" data-bs-target="#TaxiSharing">View Details <svg
+                        xmlns="http://www.w3.org/1000/svg" width="14" height="14" fill="currentColor"
+                        viewBox="0 0 16 16">
                         <path
                             d="M1 8a1 1 0 0 1 1-1h10.586l-4.293-4.293a1 1 0 0 1 1.414-1.414l6 6a1 1 0 0 1 0 1.414l-6 6a1 1 0 0 1-1.414-1.414L12.586 9H2a1 1 0 0 1-1-1z" />
                     </svg></button>
@@ -349,7 +350,28 @@
         </div>
     </div>
 
-    <!-- Future Ride 2-->
+    <!-- Taxi Sharing 2-->
+
+    <div class="modal fade" id="TaxiSharing" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-warning border border-dark">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Taxi Sharing</h1>
+                    <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                </div>
+                <div class="modal-body border border-dark">
+                    Taxi sharing allows you to split your ride with other passengers heading in the same direction, making your journey more affordable and eco-friendly. Enjoy reduced fares, meet new people, and help reduce traffic congestion. Simply select the taxi sharing option, enter your destination, and let us match you with fellow riders. Safe, convenient, and cost-effective—start sharing your ride today!
+                </div>
+                <div class="modal-footer border border-dark">
+                    <button type="button" class="modal-btn" data-bs-dismiss="modal">Close</button>
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Future Ride 3-->
 
     <div class="modal fade" id="FutureRide" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -377,7 +399,7 @@
         </div>
     </div>
 
-    <!-- Intercity Service 3-->
+    <!-- Intercity Service 4-->
 
     <div class="modal fade" id="IntercityService" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
