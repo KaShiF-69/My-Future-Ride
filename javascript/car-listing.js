@@ -17,8 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Show preloader for 3 seconds
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-      document.getElementById("preloader").classList.add("hide");
-    }, 1000); // 1 second
-  });
+  // window.addEventListener("load", () => {
+  //   setTimeout(() => {
+  //     document.getElementById("preloader").classList.add("hide");
+  //   }, 1000);
+  // });

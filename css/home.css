@@ -199,6 +199,25 @@ html {
     }
 }
 
+@media (max-width: 375px) {
+    .topbar-main {
+        display: none;
+    }
+
+    .topbar-hide {
+        display: block;
+    }
+
+    .banner {
+        width: 100%;
+        height: 120vh;
+        background-image: url('../assets/home img/jpg/background1.PNG');
+        background-size: cover;
+        background-position: center center;
+        z-index: -1;
+    }
+}
+
 /* Header or Top bar Code End Here */
 .navbar {
     width: auto;
@@ -496,6 +515,36 @@ html {
         right: 20px;
         top: 15px;
     }
+}
+
+@media (max-width: 375px) {
+    .btn-1,
+    .btn-2 {
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 2px;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        height: 55px;
+        position: relative;
+        width: 300px;
+    }
+
+    .ham-menu {
+        width: 30px;
+        height: 25px;
+        margin-bottom: 10px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    
 }
 
 .container1 {
@@ -994,7 +1043,7 @@ html {
     }
 
     .services {
-        height: 170vh;
+        height: 120vh;
     }
 }
 
@@ -1144,6 +1193,40 @@ html {
     .rideshare-img img {
         width: 20px;
     }
+
+    .rideshare-content h1 {
+        font-size: 15px;
+    }
+
+    .rideshare-content p {
+        font-size: 10px;
+    }
+
+    .explore-btn {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+
+    .view-detail-1 {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 375px) {
+    .service-banner {
+        background-image: url('../assets/home img/jpg/serv-bg3.jpg');
+        height: 120vh;
+        
+    }
+
+    .rideshare-img {
+       display: none;
+    }
+
+    /* .rideshare-img img {
+        width: 20px;
+    } */
 
     .rideshare-content h1 {
         font-size: 15px;

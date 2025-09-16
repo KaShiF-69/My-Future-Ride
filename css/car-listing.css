@@ -24,27 +24,29 @@ html {
 
 /* Prevent AOS from moving elements outside viewport */
 [data-aos="fade-left"] {
-  transform: translateX(0) !important; /* no shift */
-  opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
+    transform: translateX(0) !important;
+    /* no shift */
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
 }
 
 [data-aos="fade-right"] {
-  transform: translateX(0) !important;
-  opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: 0.6s;
-  transition-timing-function: ease;
+    transform: translateX(0) !important;
+    opacity: 0;
+    transition-property: opacity, transform;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
 }
 
 [data-aos="fade-up"] {
-  transform: translateY(40px); /* only vertical shift */
+    transform: translateY(40px);
+    /* only vertical shift */
 }
 
 [data-aos="fade-down"] {
-  transform: translateY(-40px);
+    transform: translateY(-40px);
 }
 
 
@@ -77,12 +79,24 @@ html {
     animation: bounce 1s infinite alternate;
 }
 
-.loader span:nth-child(2) { animation-delay: 0.2s; }
-.loader span:nth-child(3) { animation-delay: 0.4s; }
+.loader span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.4s;
+}
 
 @keyframes bounce {
-    from { transform: translateY(0); opacity: 0.6; }
-    to { transform: translateY(-15px); opacity: 1; }
+    from {
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+
+    to {
+        transform: translateY(-15px);
+        opacity: 1;
+    }
 }
 
 .loading-text {
@@ -95,8 +109,15 @@ html {
 }
 
 @keyframes fade {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 1; }
+
+    0%,
+    100% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 1;
+    }
 }
 
 #preloader.hide {
@@ -264,7 +285,7 @@ header {
     .header1 {
         display: flex;
         align-items: center;
-        width: 450px;
+        width: 370px;
     }
 
     .search_bar {
@@ -525,7 +546,7 @@ header {
         padding-left: 10px;
     }
 
-    .dropdown-menu li{
+    .dropdown-menu li {
         padding-left: 10px;
     }
 
@@ -605,6 +626,39 @@ header {
     .navbar {
         height: 55px;
         position: relative;
+    }
+
+    .ham-menu {
+        width: 30px;
+        height: 25px;
+        margin-bottom: 10px;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    .navbar {
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    }
+}
+
+@media (max-width: 450px) {
+
+    .btn-1,
+    .btn-2 {
+        display: none;
+    }
+
+    .logo {
+        width: 80px;
+        margin-left: 2px;
+        margin-bottom: 10px;
+    }
+
+    .navbar {
+        height: 55px;
+        position: relative;
+        width: 370px;
     }
 
     .ham-menu {
@@ -714,14 +768,14 @@ header {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
     .bg-img {
         position: relative;
         background-image: url("../assets/home img/jpg/promo-bg.jpg");
         background-size: cover;
         background-position: center;
         height: 30vh;
-        width: 500px;
+        width: 370px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -746,6 +800,7 @@ header {
     padding: 0 40px;
     display: flex;
     gap: 20px;
+    /* overflow-x: hidden; */
 }
 
 .car-info {
@@ -1030,6 +1085,69 @@ header {
         border: 1px solid gray;
         margin-top: 40px;
         margin-left: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .service-info {
+        display: none;
+    }
+
+    .car-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .car-info {
+        width: 370px;
+        padding: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border: 1px solid gray;
+        margin-top: 40px;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 375px) {
+    .service-info {
+        display: none;
+    }
+
+    .car-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .car-info {
+        width: 300px;
+        padding: 10px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border: 1px solid gray;
+        margin-top: 40px;
+        /* margin-left: 10px; */
+    }
+
+    .number {
+        width: 30px;
+        height: 30px;
+        background-color: lightgray;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+    }
+
+    .numbering {
+        margin-top: 50px;
+        margin-bottom: 60px;
+        display: flex;
+        gap: 5px;
     }
 }
 

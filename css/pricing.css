@@ -540,6 +540,7 @@
     background-color: #ffc107;
 }
 
+
 /* footer css kashif */
 .footerfont {
     font-family: "Inter", sans-serif;
@@ -599,5 +600,15 @@
 @media (max-width: 1050px) {
     .pricing-btn {
         width: 70%;
+    }
+}
+@media (max-width: 828px) {
+    .pricing-btn {
+        height: 80%;
+    }
+}
+@media (max-width: 768px) {
+    .pricing-btn {
+        height: 50px;
     }
 }

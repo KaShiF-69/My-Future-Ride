@@ -471,6 +471,13 @@
   width: 520px;
 }
 
+@media (max-width: 992px) {
+  .aboutimg {
+    display: none;
+  }
+
+}
+
 .dot-title {
   display: flex;
   font-family: "Inter", sans-serif;
