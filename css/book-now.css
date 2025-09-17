@@ -253,7 +253,7 @@ html {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: white;
+        background-color: white; 
         position: absolute;
         top: 80px;
         left: 0;
@@ -485,21 +485,21 @@ html {
         background-size: cover;
         background-position: center;
         height: 40vh;
-        width: 500px;
+        width: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 375px) {
     .bg-img {
         position: relative;
         background-image: url("../assets/home img/jpg/promo-bg.jpg");
         background-size: cover;
         background-position: center;
         height: 30vh;
-        width: 500px;
+        width: 250px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -673,6 +673,12 @@ textarea+i {
         max-width: 800px;
         margin: 0 auto 40px auto;
         line-height: 1.6;
+    }
+}
+
+@media (max-width: 375px) {
+    .booking-section {
+        width: 300px;
     }
 }
 
