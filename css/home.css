@@ -833,6 +833,7 @@ html {
     display: none;
 }
 
+
 @media (max-width: 1200px) {
     .choosing {
         flex-direction: column;
@@ -1342,6 +1343,13 @@ html {
     height: 1px;
     background-color: black;
 }
+
+@media (max-width: 1318px){
+    .getstarted{
+        margin-top: 318px;
+    }
+}
+
 
 /* Footer Css Kashif */
 .footerfont {
