@@ -253,7 +253,7 @@ html {
     .nav-links {
         display: none;
         flex-direction: column;
-        background-color: white; 
+        background-color: white;
         position: absolute;
         top: 80px;
         left: 0;
@@ -299,7 +299,7 @@ html {
         padding-left: 10px;
     }
 
-    .dropdown-menu li{
+    .dropdown-menu li {
         padding-left: 10px;
     }
 
@@ -683,6 +683,82 @@ textarea+i {
 @media (max-width: 375px) {
     .booking-section {
         width: 300px;
+    }
+}
+
+/* transcript css */
+
+#transcript-container {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#transcript-container h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+}
+
+.transcript-card {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    row-gap: 12px;
+    column-gap: 20px;
+}
+
+.transcript-card p {
+    margin: 0;
+    font-size: 15px;
+    padding: 8px 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.transcript-card p strong {
+    color: #555;
+    font-weight: 600;
+}
+
+#cancel-ride {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Responsive Transcript */
+@media (max-width: 600px) {
+    .transcript-card {
+        grid-template-columns: 1fr;
+    }
+
+    .transcript-card p {
+        font-size: 14px;
+        padding: 6px 0;
+    }
+
+    #transcript-container {
+        padding: 15px;
+        margin: 20px;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 400px) {
+    .transcript-card p {
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    #cancel-ride {
+        width: 100%;
+        padding: 12px;
     }
 }
 

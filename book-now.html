@@ -58,14 +58,14 @@
 
     <main class="container-fluid px-3">
         <div class="row">
-        <div class="bg-img " data-aos="fade-up" data-aos-duration="1000">
-            <div class="text">
-                <h1 data-aos="fade-right" data-aos-duration="1200">BOOK NOW</h1>
-                <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200">
-                    <a href="home.html">Home</a> <span>//</span> <a href="book-now.html">Book Now</a>
-                </p>
+            <div class="bg-img " data-aos="fade-up" data-aos-duration="1000">
+                <div class="text">
+                    <h1 data-aos="fade-right" data-aos-duration="1200">BOOK NOW</h1>
+                    <p data-aos="fade-right" data-aos-delay="200" data-aos-duration="1200">
+                        <a href="home.html">Home</a> <span>//</span> <a href="book-now.html">Book Now</a>
+                    </p>
+                </div>
             </div>
-        </div>
         </div>
     </main>
 
@@ -115,13 +115,10 @@
                 </div>
                 <div class="form-group" data-aos="fade-up" data-aos-delay="700">
                     <select>
-                        <option disabled selected>Select Car</option>
-                        <option>Toyota</option>
-                        <option>Alto</option>
-                        <option>Mehran</option>
-                        <option>Civic</option>
-                        <option>Corolla</option>
-                        <option>Bike</option>
+                        <option disabled selected>Select Car Type</option>
+                        <option id="eco">Economy</option>
+                        <option id="bussin">Business</option>
+                        <option id="prem">Premium</option>
                     </select>
                 </div>
 
@@ -138,12 +135,36 @@
                     <i class="fa fa-pen"></i>
                 </div>
 
+                <!-- Pricing Input -->
+                <div class="form-group full" data-aos="fade-up" data-aos-delay="1050">
+                    <input type="text" id="price" placeholder="Enter Estimated Price (PKR)" disabled>
+                    <span class="currency-label">PKR</span>
+                </div>
+
+                <ul class="d-none">
+                    <li id="eco-price">300</li>
+                    <li id="bussin-price">600</li>
+                    <li id="prem-price">800</li>
+                </ul>
+
+
                 <div class="form-group full" data-aos="fade-up" data-aos-delay="1100">
                     <button type="submit" class="btn-submit">Book Now</button>
                 </div>
             </form>
         </div>
     </section>
+
+    <!-- Transcript Section -->
+    <div id="transcript-container" class="mt-5"
+        style="display:none; border:1px solid #ccc; padding:15px; border-radius:8px;">
+        <h3>Your Booking Transcript</h3>
+        <div id="transcript-details" class="transcript-card"></div>
+        <button id="cancel-ride" class="btn btn-danger mt-3">Cancel Ride</button>
+    </div>
+
+
+
 
 
     <!-- Footer -->
@@ -215,7 +236,7 @@
 
 
 
-
+    <script src="Jquery/book-now.js"></script>
     <script src="javascript/book-now.js"></script>
     <!-- AOS Library JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
